@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+jasper:
+  path-to-template:
+    pdf: classpath:pdf_report.jrxml
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

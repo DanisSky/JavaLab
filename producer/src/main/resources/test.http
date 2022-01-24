@@ -1,0 +1,49 @@
+# register
+POST http://localhost:8080/api/user/register
+Content-Type: application/json
+
+{
+  "login": "danis@danis.com",
+  "name": "danis",
+  "password": "danisSecret"
+}
+
+###
+
+# login
+POST http://localhost:8080/api/user/login
+Content-Type: application/json
+
+{
+  "login": "danis@danis.com",
+  "password": "danisSecret"
+}
+
+###
+
+# doc-type-1
+GET http://localhost:8080/api/statements
+Content-Type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MyIsImNyZWF0ZWRBdCI6IjIwMjItMDEtMjRUMTc6MjM6MzEuNzYxIiwicm9sZSI6IlVTRVIiLCJzdGF0ZSI6IkFDVElWRSIsImVtYWlsIjoiZGFuaXNAZGFuaXMuY29tIn0.59haNLf4jEBVljou5j7q6lI5CXLxB_by8xfVbqVWWq8
+
+{
+  "firstName": "danis",
+  "lastName": "zinnatullin",
+  "name": "test",
+  "type": "type_1",
+  "text": "test3"
+}
+
+###
+# doc-type-2
+GET http://localhost:8080/api/statements
+Content-Type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0NCIsImNyZWF0ZWRBdCI6IjIwMjItMDEtMjRUMTc6MzA6NDQuMDI5Iiwicm9sZSI6IlVTRVIiLCJzdGF0ZSI6IkFDVElWRSIsImVtYWlsIjoiZGFuaXNAZGFuaXMuY29tIn0.eYk0C_uuWsLBLynxNtnffqFZAJb4FRy7lsHu_NUF8hw
+
+{
+  "firstName": "danis",
+  "lastName": "zinnatullin",
+  "name": "test",
+  "type": "type_2",
+  "text": "test3"
+}
